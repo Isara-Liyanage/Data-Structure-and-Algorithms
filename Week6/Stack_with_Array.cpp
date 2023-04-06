@@ -60,9 +60,12 @@ public:
 };
 
 int main() {
+    cout << "Enter the size of stack : ";
+    int size;
+    cin >> size;
 
     auto t_start = chrono::high_resolution_clock::now();  
-    Stack s(10); // create stack object with size 10
+    Stack s(size); // create stack object with size 10
     s.push(8);
     s.push(10);
     s.push(5);
