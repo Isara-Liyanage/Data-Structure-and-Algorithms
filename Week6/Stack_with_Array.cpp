@@ -10,7 +10,7 @@ private:
     int size;
 public:
     Stack(int size) {
-        size = size;
+        this->size = size;
         top = -1;
         arr = new int[size];
     }
@@ -61,7 +61,7 @@ public:
 
 int main() {
 
-    auto t_start = chrono::high_resolution_clock::now();   
+    auto t_start = chrono::high_resolution_clock::now();  
     Stack s(10); // create stack object with size 10
     s.push(8);
     s.push(10);
